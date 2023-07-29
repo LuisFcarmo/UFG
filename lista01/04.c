@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main () {
-    loat a;
+    float a;
     float b;
     float c;
     float d;
