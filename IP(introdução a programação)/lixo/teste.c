@@ -5,15 +5,36 @@
         int embaixo;
     } racional;
     int MDC (racional a) {
-       int resto;
-       a.encima =  abs(a.encima);
-       a.embaixo = abs(a.embaixo);
-       while (a.embaixo != 0) {
-            resto = a.encima % a.embaixo;
-            a.encima = a.embaixo;
-            a.embaixo = resto;
-       }
-       return a.encima;
+        int cima = abs(a.encima);
+        int baixo = abs(a.embaixo);
+        int contador = 2;
+        int mdc = 1;
+        int boleano1 = 0, boleano2 = 0;
+        while (1)
+        {
+        if (cima%contador == 0) {
+                cima /= contador;
+                boleano1 = 1;
+            } else {
+                boleano1 = 0;
+            } 
+            if (baixo%contador == 0) {
+                baixo /= contador;
+                boleano2 = 1;
+            } else {
+                boleano2 = 0;
+            }
+            if (boleano1 == 0 && boleano2 == 0) {
+                contador++;
+            }
+            if (boleano1 == 1 && boleano2 == 1){
+                mdc *= contador;
+            }
+            if ((cima == 1 || baixo == 1)) {
+                break;
+            }
+        }
+        return mdc;
     }
      
     int MMC (racional a, racional b) {
