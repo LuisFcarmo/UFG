@@ -77,7 +77,7 @@ int main () {
     cin >> tamanho;
     vector<vector<setas>> pista2(tamanho, vector<setas>(tamanho));
     
-    pista = (setas*) malloc(sizeof(setas)*tamanho);
+    pista = (setas**) malloc(sizeof(setas)*tamanho);
 
     for (int i = 0; i < tamanho; i++) {
         pista[i] = (setas*) malloc(sizeof(setas)*tamanho);
@@ -90,15 +90,10 @@ int main () {
     }
     controle(pista, tamanho, 0, 0);
 
-   /*for (int i = 0; i < tamanho; i++) {
-        for (int k = 0; k < tamanho; k++) {
-            percorre(pista, tamanho, k, i);
-             for(int i = 0; i < tamanho; i++){
-                for(int j = 0; j < tamanho; j++){
-                    pista[i][j].visitados = false;
-            }
-    }*/
-
+    for (int i = 0; i < tamanho; i++) {
+        free(pista[i]);
+    }
+    free(pista);
 
     printf("%d\n", validos);
 
