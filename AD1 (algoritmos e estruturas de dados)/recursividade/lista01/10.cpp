@@ -44,6 +44,7 @@ void percorre (setas ** pista, int tamanho, int ic_atual, int il_atual) {
         }
 
     percorre(pista, tamanho, ic_atual, il_atual);
+    return;
 }
 
 void controle (setas ** pista, int tamanho, int ic_atual, int il_atual) {
@@ -65,6 +66,7 @@ void controle (setas ** pista, int tamanho, int ic_atual, int il_atual) {
 
 
     controle(pista, tamanho, ic_atual+1, il_atual);
+    return;
 }
 
 int main () {
