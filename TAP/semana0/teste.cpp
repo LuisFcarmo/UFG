@@ -77,7 +77,6 @@ int main () {
 
     setas **pista;
     cin >> tamanho;
-
     
     pista = (setas**) malloc(sizeof(setas*)*tamanho);
 
@@ -87,11 +86,11 @@ int main () {
 
     for (int i = 0; i < tamanho; i++) {
         for (int k = 0; k < tamanho; k++) {
-        cin >> pista[i][k].valor;
+            cin >> pista[i][k].valor;
         }
     }
-    controle(pista, tamanho, 0, 0);
 
+    controle(pista, tamanho, 0, 0);
 
     printf("%d\n", validos);
 

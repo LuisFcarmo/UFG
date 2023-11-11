@@ -1,7 +1,6 @@
-#include <iostream>
+#include <stdio.h>
 #include <stdlib.h>
-
-#include <vector>
+#include <stdbool.h>
 
 typedef struct
 {
@@ -9,7 +8,6 @@ typedef struct
   bool visitados;
 } setas;
 
-using namespace std;
 int validos = 0;
 bool teste;
 
@@ -49,6 +47,8 @@ void percorre (setas ** pista, int tamanho, int ic_atual, int il_atual) {
 
 void controle (setas ** pista, int tamanho, int ic_atual, int il_atual) {
     teste = false;
+    int i = 0;
+    int j = 0;
     if (ic_atual >= tamanho) {
         ic_atual = 0;
         il_atual += 1;
@@ -56,8 +56,8 @@ void controle (setas ** pista, int tamanho, int ic_atual, int il_atual) {
 
     if (il_atual >= tamanho) return;
 
-    for(int i = 0; i < tamanho; i++){
-        for(int j = 0; j < tamanho; j++){
+    for( i = 0; i < tamanho; i++){
+        for( j = 0; j < tamanho; j++){
             pista[i][j].visitados = false;
         }
     }
@@ -70,28 +70,32 @@ void controle (setas ** pista, int tamanho, int ic_atual, int il_atual) {
 }
 
 int main () {
-    int tamanho;
-    int ic_atual;
-    int il_atual;
-    int invalidos;
+    int tamanho = 0;
+    int i = 0, k = 0;
+    int ic_atual = 0;
+    int il_atual = 0;
+    int invalidos = 0;
 
     setas **pista;
-    cin >> tamanho;
+    scanf("%d", &tamanho);
 
-    
-    pista = (setas**) malloc(sizeof(setas*)*tamanho);
+    pista = (setas**) malloc(sizeof(setas)*tamanho);
 
-    for (int i = 0; i < tamanho; i++) {
+    for ( i = 0; i < tamanho; i++) {
         pista[i] = (setas*) malloc(sizeof(setas)*tamanho);
     }
 
-    for (int i = 0; i < tamanho; i++) {
-        for (int k = 0; k < tamanho; k++) {
-        cin >> pista[i][k].valor;
+    for ( i = 0; i < tamanho; i++) {
+        for ( k = 0; k < tamanho; k++) {
+            scanf("%c", &pista[i][k]);
         }
     }
     controle(pista, tamanho, 0, 0);
 
+    /*for (int i = 0; i < tamanho; i++) {
+        free(pista[i]);
+    }
+    free(pista);*/
 
     printf("%d\n", validos);
 
