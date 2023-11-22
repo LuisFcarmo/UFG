@@ -23,8 +23,7 @@ String *Scanf_Text () {
     String *Text = (String*) malloc(sizeof(String)*1);
     char *st = (char*) malloc(sizeof(char)*MaxSize);
     int size = 0;
-    scanf("%[^\n]", st);
-
+ 
     for (int i = 0; st[i] != '\0'; i++) {
         size++;
     }

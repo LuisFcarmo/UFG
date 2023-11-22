@@ -199,31 +199,31 @@ int comparaData (Data d1, Data d2) {
     }
 };
 
-unsigned int numeroDiasDatas (Data d1, Data d2) {
-  int qtd = Converte_dias(d1) - Converte_dias(d2);
-  if (qtd < 0) {
-    qtd*-1;
+int numeroDiasDatas (Data d1, Data d2) {
+  int dia = Converte_dias(d1) - Converte_dias(d2);
+  if (dia < 0) {
+    dia *= -1;
   }
-  return qtd;
+  return dia;
 };
 
-unsigned int numeroMesesDatas (Data d1, Data d2) {
-    int qtd = ((d1 -> ano - 1900)*12) - ((d2 -> ano - 1900)*12);
-    if (qtd < 0) {
-        qtd*-1;
+int numeroMesesDatas (Data d1, Data d2) {   
+    int meses = ((d1 -> ano - 1900)*12) - ((d2 -> ano - 1900)*12);
+    if (meses < 0) {
+        meses *= -1;
     }
-    return qtd;
+    return meses;
 };
-unsigned int numeroAnosDatas (Data d1, Data d2) {
+int numeroAnosDatas (Data d1, Data d2) {
     int ano = d1-> ano - d2-> ano;
     if (ano < 0) {
-        return ano*-1;
+        return ano *= -1;
     }
     return ano;
 };
 
 unsigned int obtemDiaSemanaData (Data d) {
-    int dia = d -> dia % 7;
+    unsigned int dia = d -> dia % 7;
     if (dia == 0) {
         return 7;
     }
@@ -231,42 +231,20 @@ unsigned int obtemDiaSemanaData (Data d) {
 };
 
 char * imprimeData (Data d, char * formato) {
-    int vetor[8];
-    char parametro[4];
-    bool a = false, m = false, d = false;
-    char string[9];
-    for (int i = 0; i < 8; i++) {
-        if (i < 4) {
-            vetor[i] = d -> ano % 10;
-            d -> ano /= 10;
+    bool ano = false, dia = false, mes = false;
+    for (int i = 0; formato[i] != '\0'; i++) {
+        if (formato[i] == 'a' && ano == false) {
+            printf("(%d)", d -> ano);
+            ano = true;
         }
-        else if (i >= 4 && i <= 5) {
-            vetor[i] = d -> mes % 10;
-            d -> mes /= 10;
-        } else if (i > 5) {
-            vetor[i] = d -> dia % 10;
-            d -> dia /= 10;
+        if (formato[i] == 'd' && dia == false) {
+            printf("(%d)", d -> dia);
+            dia = true;
+        }
+        if (formato[i] == 'm' && mes == false) {
+            printf("(%d)", d -> mes);
+            mes = true;
         }
     }
-    for (int i = 0; i != "\0"; i++) {
-        if (formato[i] == 'a' && a == false) {
-            for (int k = 0; k < 4; k++) {
-                string[i] = vetor[k];
-            }
-            a = true;
-        }
-        if (formato[i] == 'm' && m == false) {
-            for (int k = 4; k <= 5; k++) {
-                string[i] = vetor[k];
-            }
-            m = true;
-        }
-        if (formato[i] == 'd' && d == false) {
-            for (int k = 6; k <= 8; k++) {
-                string[i] = vetor[k];
-            }
-            m = true;
-        }
-    }
-    return string;
+
 };

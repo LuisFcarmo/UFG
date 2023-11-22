@@ -32,10 +32,10 @@ unsigned int obtemAnoData (Data);
 
 int comparaData (Data, Data);
 
-unsigned int numeroDiasDatas (Data, Data);
+int numeroDiasDatas (Data, Data);
 
-unsigned int numeroMesesDatas (Data, Data);
-unsigned int numeroAnosDatas (Data, Data);
+int numeroMesesDatas (Data, Data);
+int numeroAnosDatas (Data, Data);
 
 unsigned int obtemDiaSemanaData (Data);
 
