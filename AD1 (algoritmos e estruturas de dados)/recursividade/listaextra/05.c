@@ -16,10 +16,7 @@ void preenche (int *vetor, int tamanho, int i) {
     if (i == tamanho) {
         return somarecursiva(vetor, tamanho, 0);
     }
-    scanf("%d", &vetor[i]);
-    preenche(vetor, tamanho, i+1);
 }
-
 void leitura (int qtd) {
     if (qtd == 0) return;
     int tamanho;
