@@ -18,12 +18,15 @@ typedef struct {
         float valueF;
         int valueI;
         char *ValueS;
-        double ValeuD;
+        double ValueD;
         long long ValueLL;
     } value;
 } ELEMENT;
 
-//queue
+ELEMENT Tscanf(ELEMENT);
+
+
+//queue functions
 typedef struct _node node;
 
 typedef struct _queue Queue;
@@ -33,8 +36,21 @@ bool Destruct_Queue(Queue **);
 node *New_Node(ELEMENT);
 bool Enqueue(Queue *, ELEMENT);
 void Dequeue (Queue *);
-ELEMENT Row_peek (Queue *);
+ELEMENT Queue_peek (Queue *);
 bool Queue_is_empty(Queue *);
-void printa(Queue *);
-
+void Queue_show (Queue *);
 #endif
+
+//stack functions
+
+typedef struct _Dnode dnode;
+typedef struct _stack Stack;
+
+Stack *New_stack();
+dnode *New_dnode(ELEMENT);
+bool Destruct_stack(Stack **);
+bool Stack_is_empty(Stack *);
+bool pop(Stack *);
+bool push(Stack *, ELEMENT);
+void Stack_show(Stack *);
+ELEMENT Stack_peek(Stack*);

@@ -1,35 +1,22 @@
 #include "Datastructs.h"
 #include <stdio.h>
 int main () {
-    ELEMENT elemento;
-    elemento.type = INTEGER;
-    elemento.value.valueI = 1;
-    Queue *lista = New_Queue();
-    Enqueue(lista, elemento);
-    elemento.value.valueI = 2;
-    Enqueue(lista, elemento);
-    elemento.value.valueI = 3;
-    Enqueue(lista, elemento);
-    elemento.value.valueI = 4;
-    Enqueue(lista, elemento);
-    Dequeue(lista);
-    elemento.value.valueI = 5;
-    Enqueue(lista, elemento);
-    Dequeue(lista);
-    elemento.value.valueI = 5;
-    Enqueue(lista, elemento);
-    Dequeue(lista);
+  ELEMENT x;
+  ELEMENT y;
+  x.type = INTEGER;
+  y.type = FLOAT;
+  Queue *Queue = New_Queue();
+  Stack *Stack = New_stack();
 
-    elemento.value.valueI = 5;
-    Enqueue(lista, elemento);
-    elemento.value.valueI = 5;
-    Enqueue(lista, elemento);
-    Dequeue(lista);
-    Dequeue(lista);
-    Dequeue(lista);
-    Dequeue(lista);
-  Dequeue(lista);
-    Dequeue(lista);
-    Destruct_Queue(&lista);
-
+  for (int i = 0; i < 5; i++) {
+    x = Tscanf(x);
+    Enqueue(Queue, x);
+  }
+  for (int i = 0; i < 5; i++) {
+    y = Tscanf(y);
+    push(Stack, y);
+  }
+  Queue_show(Queue);
+  Stack_show(Stack);
+  //Stack_show(xf);
 }
