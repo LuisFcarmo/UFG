@@ -5,18 +5,29 @@ int main () {
   ELEMENT y;
   x.type = INTEGER;
   y.type = FLOAT;
-  Queue *Queue = New_Queue();
-  Stack *Stack = New_stack();
+  Linkedlist *list = New_list();
+  Linkedlist *flist = New_list();
 
   for (int i = 0; i < 5; i++) {
-    x = Tscanf(x);
-    Enqueue(Queue, x);
-  }
-  for (int i = 0; i < 5; i++) {
     y = Tscanf(y);
-    push(Stack, y);
+    Add_last_list(flist, y);
   }
-  Queue_show(Queue);
-  Stack_show(Stack);
+
+ 
+  y = Tscanf(y);
+  Remove_all(flist, y);
+  List_show(flist);
+  Remove_first(flist, y);
+  //Remove_first(flist, y);
+  /*List_show(flist);
+  Remove_first(flist, y);
+  List_show(flist);
+  Remove_first(flist, y);
+  List_show(flist);
+  Remove_first(flist, y);
+  List_show(flist);
+  Remove_first(flist, y);
+  List_show(flist);
+  */
   //Stack_show(xf);
 }

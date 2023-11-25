@@ -23,6 +23,7 @@ typedef struct {
     } value;
 } ELEMENT;
 
+void Tprintf(ELEMENT);
 ELEMENT Tscanf(ELEMENT);
 
 
@@ -54,3 +55,19 @@ bool pop(Stack *);
 bool push(Stack *, ELEMENT);
 void Stack_show(Stack *);
 ELEMENT Stack_peek(Stack*);
+
+//linked list functions
+
+typedef struct _linked_list Linkedlist;
+
+Linkedlist *New_list();
+bool Destruct_list(Linkedlist**);
+bool List_is_empty(Linkedlist*);
+bool Add_first_list(Linkedlist*, ELEMENT);
+bool Add_last_list(Linkedlist*, ELEMENT);
+bool Add_list(Linkedlist*, ELEMENT, int);
+ELEMENT Get_element(Linkedlist*, int);
+bool Remove_first(Linkedlist*, ELEMENT);
+bool Remove_all(Linkedlist*, ELEMENT);
+bool Remove(Linkedlist*, int);
+void List_show(Linkedlist*);
