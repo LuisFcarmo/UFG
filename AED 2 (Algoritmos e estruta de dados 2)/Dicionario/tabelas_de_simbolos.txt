@@ -1,0 +1,15 @@
+Dicionario
+Corresponde a um conjunto de itens
+    em que cada item possui uma chave e um valor
+suporta diversas operações sobre os itens
+    sendo busca a principal delas
+costuma ser dinamica isto é 
+    suporta operações de inserção e remoçõa
+é um tipo de dado abstrato possui  
+    o foco está no propósito da estrutura e não em sua implentação
+útil para armazenar e acesssar dados com facilidade a partir de suas chaves
+    as quais podem ser nomes Ips configurações etc
+possui diversas aplicações como
+    manutenção de variáveis conhecidads em compiladores
+    bloquear tráfego de certos Ips
+    detectar duplicatas

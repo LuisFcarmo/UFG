@@ -1,0 +1,6 @@
+Dado um vetor v de inteiros e um valor alvo inteiros
+determinar se existe um par de elementos em valor
+cujo a soma é igual ao alvo
+
+buscar exaustiva testa todos os pares disponiveis
+abordagem por força bruta
