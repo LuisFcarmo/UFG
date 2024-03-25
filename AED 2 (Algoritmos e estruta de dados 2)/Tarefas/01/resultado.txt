@@ -1,0 +1,135 @@
+Insira o numero de matricula
+Insira a nota01
+Insira a nota02
+Insira o seu nome
+Insira o nome do curso
+Insira o numero de matricula
+Insira a nota01
+Insira a nota02
+Insira o seu nome
+Insira o nome do curso
+Insira o numero de matricula
+Insira a nota01
+Insira a nota02
+Insira o seu nome
+Insira o nome do curso
+Insira o numero de matricula
+Insira a nota01
+Insira a nota02
+Insira o seu nome
+Insira o nome do curso
+Insira o numero de matricula
+Insira a nota01
+Insira a nota02
+Insira o seu nome
+Insira o nome do curso
+Insira o numero de matricula
+Insira a nota01
+Insira a nota02
+Insira o seu nome
+Insira o nome do curso
+Insira o numero de matricula
+Insira a nota01
+Insira a nota02
+Insira o seu nome
+Insira o nome do curso
+Insira o numero de matricula
+Insira a nota01
+Insira a nota02
+Insira o seu nome
+Insira o nome do curso
+Insira o numero de matricula
+Insira a nota01
+Insira a nota02
+Insira o seu nome
+Insira o nome do curso
+Insira o numero de matricula
+Insira a nota01
+Insira a nota02
+Insira o seu nome
+Insira o nome do curso
+elemento duplicado nada foi adicionado
+elemento duplicado nada foi adicionado
+elemento duplicado nada foi adicionado
+Insira o numero de matricula
+Insira a nota01
+Insira a nota02
+Insira o seu nome
+Insira o nome do curso
+Insira o numero de matricula
+Insira a nota01
+Insira a nota02
+Insira o seu nome
+Insira o nome do curso
+Insira o numero de matricula
+Insira a nota01
+Insira a nota02
+Insira o seu nome
+Insira o nome do curso
+Usuario existente deseja deletar (1 SIM) (2 NÃO) ?
+Usuario existente deseja deletar (1 SIM) (2 NÃO) ?
+Usuario existente deseja deletar (1 SIM) (2 NÃO) ?
+
+----------------------------------------------------------
+- matricula = 2021009                                          
+- nota 01 = 8.600000                                           
+- nota 02 = 7.200000                                           
+- Nome do Curso = Letras                                      
+- Nome do Aluno = André Souza                                      
+- Media do Aluno = 7.90                                  
+----------------------------------------------------------
+
+----------------------------------------------------------
+- matricula = 2021008                                          
+- nota 01 = 6.700000                                           
+- nota 02 = 7.100000                                           
+- Nome do Curso = Psicologia                                      
+- Nome do Aluno = Marina Silva                                      
+- Media do Aluno = 6.90                                  
+----------------------------------------------------------
+
+----------------------------------------------------------
+- matricula = 2021007                                          
+- nota 01 = 9.800000                                           
+- nota 02 = 9.700000                                           
+- Nome do Curso = Direito                                      
+- Nome do Aluno = Lucas Mendes                                      
+- Media do Aluno = 9.75                                  
+----------------------------------------------------------
+
+----------------------------------------------------------
+- matricula = 2021005                                          
+- nota 01 = 8.000000                                           
+- nota 02 = 9.500000                                           
+- Nome do Curso = Administração                                      
+- Nome do Aluno = Carlos Fernandes                                      
+- Media do Aluno = 8.75                                  
+----------------------------------------------------------
+
+----------------------------------------------------------
+- matricula = 2021004                                          
+- nota 01 = 6.900000                                           
+- nota 02 = 8.000000                                           
+- Nome do Curso = Arquitetura                                      
+- Nome do Aluno = Ana Oliveira                                      
+- Media do Aluno = 7.45                                  
+----------------------------------------------------------
+
+----------------------------------------------------------
+- matricula = 2021003                                          
+- nota 01 = 7.800000                                           
+- nota 02 = 6.500000                                           
+- Nome do Curso = Ciência da Computação                                      
+- Nome do Aluno = Pedro Santos                                      
+- Media do Aluno = 7.15                                  
+----------------------------------------------------------
+
+----------------------------------------------------------
+- matricula = 2021002                                          
+- nota 01 = 9.200000                                           
+- nota 02 = 8.700000                                           
+- Nome do Curso = Medicina                                      
+- Nome do Aluno = Maria Souza                                      
+- Media do Aluno = 8.95                                  
+----------------------------------------------------------
+A lista não existe impossivel exibir algo
