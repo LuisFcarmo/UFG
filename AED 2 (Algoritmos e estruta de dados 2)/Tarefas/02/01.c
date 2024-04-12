@@ -8,36 +8,31 @@
 
 typedef struct NO node;
 
-struct NO
-{
+struct NO {
     float valor;
     node *ant;
 };
 
-typedef struct
-{
+typedef struct {
     node *topo;
     int size;
 } descritor;
 
-node *criar_node(float valor)
-{
+node *criar_node(float valor) {
     node *new = (node *)malloc(sizeof(node) * 1);
     new->ant = NULL;
     new->valor = valor;
     return new;
 }
 
-descritor *criar_pilha()
-{
+descritor *criar_pilha() {
     descritor *new = (descritor *)malloc(sizeof(descritor) * 1);
     new->topo = NULL;
     new->size = 0;
     return new;
 }
 
-void destruir_node(node **ref)
-{
+void destruir_node(node **ref) {
     if (*ref != NULL)
     {
         node *aux = *ref;
@@ -50,8 +45,7 @@ void destruir_node(node **ref)
     }
 }
 
-float pop(descritor *pilha)
-{
+float pop(descritor *pilha) {
     if (pilha != NULL)
     {
         if (pilha->size > 0)
@@ -74,8 +68,7 @@ float pop(descritor *pilha)
     }
 }
 
-void push(descritor *pilha, float valor)
-{
+void push(descritor *pilha, float valor) {
     if (pilha != NULL)
     {
         node *novo = criar_node(valor);
@@ -90,8 +83,7 @@ void push(descritor *pilha, float valor)
     }
 }
 
-void exibir(descritor *pilha)
-{
+void exibir(descritor *pilha) {
     node *aux = pilha->topo;
     while (aux != NULL)
     {
@@ -100,8 +92,7 @@ void exibir(descritor *pilha)
     }
 }
 
-bool Operador(char string[max])
-{
+bool Operador(char string[max]) {
     if ((strcmp(string, "+") == 0) || (strcmp(string, "-") == 0) || (strcmp(string, "*") == 0) || (strcmp(string, "/") == 0) || (strcmp(string, "^") == 0) || (strcmp(string, "sqrt") == 0))
         return true;
     return false;
@@ -166,18 +157,17 @@ float resolver_expressao(char x[], descritor *pilha) {
     return pop(pilha);
 }
 
-int main()
-{
+int main() {
     descritor *pilha_denumeros = criar_pilha();
     float numero1 = 0;
     float numero2 = 0;
     float resultado = 0;
     char leitura[max];
 
-    for (int i = 0; i < 69; i++) {
+    for (int i = 0; i < 75; i++) {
         scanf("%[^\n]%*c", leitura);
-        printf("%s\n", leitura);
-        printf("resultado da expressão = %f\n", resolver_expressao(leitura, pilha_denumeros));
+        printf("%s ", leitura);
+        printf("resultado da expressão = %.2f\n", resolver_expressao(leitura, pilha_denumeros));
     };
     return 0;
 }

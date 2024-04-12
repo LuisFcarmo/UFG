@@ -1,0 +1,6 @@
+To use the program correctly, rename your .txt file to text.txt,
+this is the default name that the program uses and put it in the files folder. After that, just 
+compile using make and your compressed file will be present
+ in the compressed files folder.
+
+

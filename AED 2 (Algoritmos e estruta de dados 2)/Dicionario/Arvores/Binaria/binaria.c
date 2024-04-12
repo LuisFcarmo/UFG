@@ -2,27 +2,10 @@
 #include <stdlib.h>
 #include "binaria.h"
 #include <time.h>
-#include <stdbool.h>
 
 int RandNumber(int begin, int end) {
    return rand() % (end - begin + 1) + begin;
 }
-
-typedef struct no {
-   int valor;
-   struct no * direita;
-   struct no * esquerda;
-} NoArv;
-
-typedef struct {
-   NoArv * root;
-} TreeReference;
-
-typedef struct {
-    bool direita;
-    bool esquerda;
-    int qtd;
-} Resp;
 
 TreeReference * create_tree() {
    TreeReference * Tree = NULL;
@@ -246,7 +229,12 @@ NoArv * Remover(NoArv * root, int chave) {
                 free(root);
                 return aux;
             } else {
-
+               NoArv *aux = root -> esquerda;
+               while(aux -> direita != NULL) aux = aux -> direita;
+               root -> valor = aux -> valor;
+               aux -> valor = chave;
+               root -> esquerda = Remover(root -> esquerda, chave);
+               return root;
             }
          }
       } else {
@@ -291,31 +279,3 @@ void printTree(NoArv * root, int space) {
    // Imprime o nó da esquerda
    printTree(root -> esquerda, space);
 }
-
-int main() {
-   srand(time(NULL));
-   TreeReference * tree = create_tree();
-
-   inserir_versao_2( & (tree -> root), 583);
-   inserir_versao_2( & (tree -> root), 245);
-   inserir_versao_2( & (tree -> root), 731);
-   inserir_versao_2( & (tree -> root), 123);
-   inserir_versao_2( & (tree -> root), 389);
-   inserir_versao_2( & (tree -> root), 684);
-   inserir_versao_2( & (tree -> root), 893);
-   inserir_versao_2( & (tree -> root), 278);
-
-   printTree(tree -> root, 1);
-   printf("\n");
-   printf("altura da arvore = %d\n", altura(tree -> root));
-   printf("quantidade de nós = %d\n", Contar_no(tree -> root));
-   printf("quantidade de folhas = %d\n", contar_folhas(tree -> root));
-
-   Remover(tree -> root, 389);
-   printTree(tree -> root, 10); 
-   printf("altura da arvore = %d\n", altura(tree -> root));
-   printf("quantidade de nós = %d\n", Contar_no(tree -> root));
-   printf("quantidade de folhas = %d\n", contar_folhas(tree -> root));
-
-   return 0;
-};
