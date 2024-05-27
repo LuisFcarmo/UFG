@@ -6,7 +6,7 @@
 #define max 256
 #define defalt "Compress/defautName"
 //#define defaultTxT "Arq/text.txt"
-#define defaultTxT "testando.txt"
+#define defaultTxT "Arq/text.txt"
 //Ruffam compress arquive algorithm
 
 typedef struct _node Node;
@@ -14,12 +14,12 @@ typedef struct _node Node;
 class Dictionary {
     public:
         int freq;
-        char x;
+        unsigned char x;
         int ASCI;
 };
 
 struct _node {
-    char character;
+    unsigned char character;
     int frequence;
     //linkedlist nodes
     Node *next;
