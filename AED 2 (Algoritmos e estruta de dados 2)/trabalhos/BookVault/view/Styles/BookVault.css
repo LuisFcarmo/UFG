@@ -1,0 +1,13 @@
+#BoxLogin {
+    margin: auto;
+    width: 50%; /* ou qualquer largura desejada */
+    height: auto; /* ou qualquer altura desejada */
+    background-color: #f2f2f2; /* Cor de fundo */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 20px; /* Espaçamento interno */
+    /* Adicione outros estilos conforme necessário */
+}
+#LoginContainer {
+    background-color: black;
+}
