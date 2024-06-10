@@ -3,6 +3,7 @@
     "*.ejs": "html",
     "defines.h": "c",
     "book.h": "c",
-    "gtk.h": "c"
+    "gtk.h": "c",
+    "typeinfo": "c"
   }
 }

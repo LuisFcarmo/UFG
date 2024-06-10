@@ -10,4 +10,6 @@ typedef struct {
 
 store CreateStorage(int*);
 book FindBook(char *, store);
+order borrowAbook(char*, store);
+
 #endif

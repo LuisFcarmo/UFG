@@ -17,6 +17,21 @@ void on_main_window_destroy() {
     gtk_main_quit();
 }
 
+void Register() {
+    gtk_stack_set_visible_child_name(stackApp, "Cadastro");
+}
+
+void Login() {
+    
+}
+void ConfirmRegister() {
+    GtkEntry *eusuario = GTK_ENTRY(gtk_builder_get_object(builder, "entrycaduser"));
+    GtkEntry *esenha = GTK_ENTRY(gtk_builder_get_object(builder, "entrycadpassword"));
+    const char *usuario = gtk_entry_get_text(GTK_ENTRY(gtk_builder_get_object(builder, "entrycaduser")));
+    const char *senha = gtk_entry_get_text(GTK_ENTRY(gtk_builder_get_object(builder, "entrycadpassword")));
+
+}
+
 void usar_estilo () {
     //GtkCssProvider o objeto gtk que guarda o arquivo.css 
     GtkCssProvider *css_provider = gtk_css_provider_new();
@@ -38,13 +53,13 @@ int main (int argc, char *argv[]) {
     
     //stack e window do programa inteiro
     stackApp = GTK_STACK(gtk_builder_get_object(builder, "stack"));
-    stack_exibir_lista = GTK_STACK(gtk_builder_get_object(builder, "stack_exibir_lista"));
-
     window = GTK_WIDGET(gtk_builder_get_object(builder, "main_window"));
 
     gtk_builder_add_callback_symbols( builder,
         "on_main_window_destroy", G_CALLBACK(on_main_window_destroy),
-        
+        "on_btn_register_clicked", G_CALLBACK(Register),
+        "on_BtnLogin_clicked", G_CALLBACK(Login),
+        "on_btnCadastrar_clicked", G_CALLBACK(ConfirmRegister),
         NULL
     );
 

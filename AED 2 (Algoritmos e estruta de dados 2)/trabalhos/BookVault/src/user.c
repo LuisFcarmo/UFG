@@ -11,3 +11,15 @@ user CreateUser(char* name, char* password, int *id) {
         PushError(error, ErrorsStack);
     }
 };
+
+void RegisterUser(user UserRef) {
+    FILE *arq;
+    arq = fopen(PATH_USER_CSV, "a");
+    if(arq == NULL) {
+        node *error = CreateNode(CreateError("falha ao abrir o arquivo", 6));
+        PushError(error, ErrorsStack);
+        return;
+    }
+
+    fclose(arq);
+};

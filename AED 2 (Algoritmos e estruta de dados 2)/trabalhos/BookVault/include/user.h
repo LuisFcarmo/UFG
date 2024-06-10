@@ -9,6 +9,6 @@ typedef struct  {
 } user;
 
 user CreateUser(char*, char*, int*);
-
+void RegisterUser(user);
 
 #endif
