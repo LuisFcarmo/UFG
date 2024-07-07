@@ -1,14 +1,77 @@
 #BoxLogin {
-    margin: auto;
-    width: 50%; /* ou qualquer largura desejada */
-    height: auto; /* ou qualquer altura desejada */
-    background: #0077B6;
+    background: rgb(65, 105, 225); /* Branco Antigo */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.792);
-    border: 1.5px solid black;
-    /* Adicione outros estilos conforme necessário */
+    border-radius: 10px;
+    padding: 50px;
+    color: #333333; /* Cinza Escuro */
 }
 #LoginContainer {
-    background: white;
-    border: 1px solid black;
+    padding: 20px;
+    background: rgb(208, 218, 248); 
     border-radius: 10px;
+    border: 2px solid black;
+}
+
+#CadPag {
+    background: rgb(65, 105, 225); /* Branco Antigo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.792);
+    border-radius: 10px;
+    padding: 50px;
+    color: #333333; /* Cinza Escuro */
+}
+#CadContainer {
+    padding: 20px;
+    background: rgb(208, 218, 248); 
+    border-radius: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 50px;
+    color: #333333; /* Cinza Escuro */
+}
+
+#alugar_livro_box {
+    background: rgb(65, 105, 225); /* Branco Antigo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.792);
+    padding: 100px;
+}
+
+#grid_alugar_livro {
+    padding: 20px;
+    background: rgb(208, 218, 248); 
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#box_cadastrar_livro {
+    background: rgb(65, 105, 225); /* Branco Antigo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.792);
+    padding: 100px;
+}
+
+#grid_cadastrar_livros {
+    padding: 20px;
+    background: rgb(208, 218, 248); 
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#box_hub {
+    background: rgb(65, 105, 225); /* Branco Antigo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.792);
+    padding: 50px;
+}
+
+#grid_hub {
+    padding: 20px;
+    background: rgb(208, 218, 248); 
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#TxTComum {
+    font-weight: bolder;
+    color: black;
+}
+#LabelSession {
+    color: black;
+    font-weight: bolder;
 }

@@ -4,6 +4,7 @@
     "defines.h": "c",
     "book.h": "c",
     "gtk.h": "c",
-    "typeinfo": "c"
+    "typeinfo": "c",
+    "session.h": "c"
   }
 }

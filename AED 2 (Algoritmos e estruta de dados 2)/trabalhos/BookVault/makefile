@@ -8,13 +8,18 @@ GTK_FLAGS = `pkg-config --cflags --libs gtk+-3.0` -rdynamic
 MULTIPLE_FLAGS = "-Wl,--allow-multiple-definition"
 
 all: _src clean_apps _apps
+ 
 
 _src: $(OBJ)/AvlBooks.o \
-      $(OBJ)/book.o \
       $(OBJ)/error.o \
+      $(OBJ)/book.o \
+	  $(OBJ)/order.o \
       $(OBJ)/session.o \
       $(OBJ)/store.o \
-      $(OBJ)/user.o
+	  $(OBJ)/AvlUser.o \
+      $(OBJ)/user.o \
+	  $(OBJ)/DataBaseManager.o\
+	  $(OBJ)/LinkedList.o\
 
 clean_apps:
 	rm -rf $(BIN)/*

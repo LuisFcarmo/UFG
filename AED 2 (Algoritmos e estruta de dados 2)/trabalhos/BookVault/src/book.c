@@ -35,3 +35,17 @@ book ReadBook(book* reference) {
     }
 };
 
+bool validations(book *x) {
+    if (x != NULL) {
+        if (strlen(x->Name) < 0 || strlen(x->Author) < 0 || x->Amount < 0)  {
+            PushError(CreateNode(CreateError("Parametrôs para criação do objeto estão invalidos Nulos ou com especificações err", 1)), ErrorsStack);
+            return false;
+        } else {
+            return true;
+        }
+    } else {
+        PushError(CreateNode(CreateError("Objeto nulo", 1)), ErrorsStack);
+        return false;
+    }
+}
+

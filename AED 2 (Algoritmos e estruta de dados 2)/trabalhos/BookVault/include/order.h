@@ -9,6 +9,11 @@ typedef struct {
     float valueOFfine;
 } order;
 
-order CreateOrder(book);
+/**
+ * @brief Creates an order for a borrowed book.
+ * @param borrowedBook The book that is being borrowed.
+ * @return An order structure with the details of the borrowed book.
+ */
+order CreateOrder(book borrowedBook);
 
-#endif
+#endif // ORDER

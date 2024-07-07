@@ -1,0 +1,8 @@
+Para utilizar o programa é necessario ter a biblioteca gtk instalada no computador
+
+Como usar ?
+este é um gerenciador de estoque de bibliotecas que vai gerir todo o sistema de alugueis de livros o usuario deve se registrar
+logar e escolher os livros na parte de alguel 
+após finalizar seu pedido
+um .csv com os livros alugados a quantidade de dias e o preço da multa por não devolução vai ser gerado na pastar Oders basta imprimir e 
+entregar ai cliente 

@@ -1,0 +1,7 @@
+algus erros que a error stack pode lançar (sistema em beta)
+"Erro a inicializar o banco de dados" codigio 11
+"Erro ao fazer a migração dos dados para o banco de dados" codigo 12
+Erro ao acessar os dados do banco 13
+"Referencia a banco nula", 14
+Erro de alocação de memorial" codigo 1
+"Objeto nullo foi passado para função" codigo 99
