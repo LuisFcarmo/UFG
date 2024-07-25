@@ -525,6 +525,7 @@ bool verificar_palavras_reservadas(char *code) {
 
 
 int main() {
+    //este codigo pega nome de variaveis como errado
     initStack(&stack_parenteses_abrir);
     initStack(&stack_parenteses_fechar);
     initStack(&stack_chaves_abrir);
@@ -535,7 +536,7 @@ int main() {
     initStack(&stack_aspas_simples);
 
 
-    char *content = readFile("./codigoteste.c");
+    char *content = readFile("./codigoteste2.c");
     verifyBlocks(content);
     print_irregular_blocks();
     povoar_arvore_verificadora();

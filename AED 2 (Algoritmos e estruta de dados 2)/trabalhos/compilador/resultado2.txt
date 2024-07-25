@@ -1,0 +1,14 @@
+o codigo apresenta irregularidades ao fechar }
+o codigo apresenta irregularidades ao fechar ]
+o codigo apresenta irregularidades ao fechar )
+o codigo apresetna irregularidades ao fechar " 
+ifpalavra reserva apresenta sintaxe incorreta = num
+palavra reserva apresenta sintaxe incorreta = chaaaar
+palavra reserva apresenta sintaxe incorreta = name
+palavra reserva apresenta sintaxe incorreta = floaoot
+palavra reserva apresenta sintaxe incorreta = values
+palavra reserva apresenta sintaxe incorreta = ifff
+palavra reserva apresenta sintaxe incorreta = Number
+palavra reserva apresenta sintaxe incorreta = greater
+palavra reserva apresenta sintaxe incorreta = forrr
+

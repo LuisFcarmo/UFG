@@ -1,0 +1,15 @@
+o codigo apresenta irregularidades ao fechar }
+o codigo apresetna irregularidades ao fechar " 
+ifpalavra reserva apresenta sintaxe incorreta = #inclide
+palavra reserva apresenta sintaxe incorreta = innt
+palavra reserva apresenta sintaxe incorreta = prinft
+palavra reserva apresenta sintaxe incorreta = forr
+palavra reserva apresenta sintaxe incorreta = wile
+palavra reserva apresenta sintaxe incorreta = maior
+palavra reserva apresenta sintaxe incorreta = menor
+palavra reserva apresenta sintaxe incorreta = igual
+palavra reserva apresenta sintaxe incorreta = programa
+palavra reserva apresenta sintaxe incorreta = str
+palavra reserva apresenta sintaxe incorreta = Hello
+palavra reserva apresenta sintaxe incorreta = world
+palavra reserva apresenta sintaxe incorreta = array

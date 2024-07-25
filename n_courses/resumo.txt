@@ -1,0 +1,32 @@
+Então, qual é a diferença entre attron() e attrset()? 
+attrset define os atributos de janela, enquanto attron apenas ativa o atributo fornecido a ele.
+standend(), que é equivalente a attrset(A_NORMAL), que desativa todos os atributos e leva você ao modo normal.
+basicamente reseta os atributos nas janela
+
+attr_get() // pega os atributos atuais aplicados na janela
+
+Para cada uma das funções acima, temos uma função correspondente com ‘w’
+que opera em uma janela específica. As funções acima operam em stdscr.
+
+A função chgat() está listada no final da página do manual curs_attr. Na verdade, é útil. 
+Esta função pode ser usada para definir atributos para um grupo de personagens sem se mover. 
+Quero dizer !!! sem mover o cursor 😃 . Ele muda os atributos de um determinado número de caracteres 
+começando na posição atual do cursor.
+
+Podemos dar -1 como a contagem de caracteres para atualizar até o final da linha. Se você quiser alterar 
+os atributos dos caracteres da posição atual até o final da linha, basta usar isso.
+
+chgat(-1, A_REVERSE, 0, NULL);
+
+
+basico sobre janelas 
+8.1. O básico
+
+Uma janela pode ser criada chamando a função newwin(). Na verdade, isso não cria nada na tela. Ela aloca memória para 
+uma estrutura para manipular a janela e atualiza a estrutura com dados relativos à janela como seu tamanho, beginy, beginx, etc.
+
+Portanto, em curses, uma janela é apenas uma abstração de uma janela imaginária, que pode ser manipulada independentemente 
+de outras partes da tela. A função newwin() retorna um ponteiro para a estrutura WINDOW, que pode ser passado para funções 
+relacionadas à janela como wprintw() etc.
+
+Finalmente, a janela pode ser destruída com delwin(). Isso irá desalocar a memória associada à estrutura da janela.

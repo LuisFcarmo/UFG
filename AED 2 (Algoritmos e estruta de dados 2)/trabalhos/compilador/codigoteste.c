@@ -11,7 +11,7 @@ int main() {
         printf("i = %d\n", i);
     }
 
-    int w = wile (x < 100) {  
+    iiint w = wile (x < 100) {  
         x += y;
     }
 
