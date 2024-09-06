@@ -224,24 +224,12 @@ NoArv * Remover(NoArv * root, int chave) {
 }
 int main() {
     NoArv *root = NULL;
-    root = inserir(root, 10);
-    root = inserir(root, 20);
-    root = inserir(root, 30);
-    root = inserir(root, 40);
-    root = inserir(root, 50);
-    root = inserir(root, 60);
-    root = inserir(root, 70);
-    root = inserir(root, 80);
-    root = inserir(root, 90);
-
-
-    Remover(root, 70);
-    Remover(root, 50);
-    Remover(root, 90);
-    Remover(root, 80);
-    Remover(root, 60);
-    Remover(root, 10);
-
+    root = inserir(root, 2);
+    root = inserir(root, 0);
+    root = inserir(root, 1);
+    root = inserir(root, 4);
+    root = inserir(root, 3);
+    root = inserir(root, 5);
 
     imprimir(root, 1);
     return 0;
