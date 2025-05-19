@@ -6,7 +6,6 @@ int string2num(char *s, int base) {
     int a = 0;
     char caractere = 0; 
     int digit;
-
     for ( ; *s; s++) {
         if (base > 36) return -1;
         if (*s >= '0' && *s <= '9')  digit = *s - '0';
@@ -17,7 +16,6 @@ int string2num(char *s, int base) {
 
         a = a*base + digit;
     }
-
     return a;
 }
 
@@ -108,11 +106,6 @@ void num3string(int num, int base, char *resp){
     invert_string(resp, contador);
 }
 
-
-void print(char *texto) {
-    printf("%s\n", texto);
-}
-
 // Função de teste
 void testar_num3string() {
     char buffer[50];
@@ -148,15 +141,10 @@ int main() {
     short short_p = 'a';
     char p[] = "7509";
 
-    print("printando o inteiro e o endereço dos 4 bits e os valores neles");
     dump(&inteiro, 4);
-    print("printando o long e o endereço dos 8 bits e os valores neles");
     dump(&long_num, 8);
-    print("printando o char e o endereço dos 1 bits e os valores neles");
     dump(&palavra, 1);
-    print("printando o short e o endereço dos 2 bits e os valores neles");
     dump(&short_p, 2);
-    print("printando o vetor de char e o endereço dos 4 bits e os valores neles");
     dump(&p, 4);
 
     //conerversor de string para number

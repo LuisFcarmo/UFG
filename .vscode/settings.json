@@ -11,6 +11,9 @@
         "utility": "c",
         "variant": "c",
         "*.tcc": "c",
-        "limits": "cpp"
+        "limits": "cpp",
+        "numbers": "c",
+        "assert.h": "c",
+        "chrono": "c"
     }
 }
